@@ -6,6 +6,7 @@ Our solutions and write-ups to various CTFs for team "Never :q!". We are quite a
 
 | CTF | Year | Solved | Place | 
 | --- | --- | --- | --- |
+| [Hack.lu](https://2025.hack.lu/ctf/)^[ctftime](https://ctftime.org/event/2842) | 2025 | 14/33 | 43/299 |
 | [PlaidCTF](https://plaidctf.com/)^[ctftime](https://ctftime.org/event/2508) | 2025 | 5/18 | 40/903 |
 | [Hack.lu](https://2024.hack.lu/ctf/)^[ctftime](https://ctftime.org/event/2438) | 2024 | 3/? | 56/155 |
 
