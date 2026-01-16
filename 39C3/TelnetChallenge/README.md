@@ -45,7 +45,9 @@ Now, with enough info we could correctly provide the correct username and passwo
 
 The pass did not contain quotes, instead it was surrounded by slashes as in JavaScript.
 
-The connection terminated afterwards.
+The connection terminated afterwards. Three stars at this point:
+
+![](./media/leaderboard.jpeg)
 
 ## 3. Deciphering keepass.db
 
@@ -93,6 +95,7 @@ This produced the password in around 10 minutes on a 3090 RTX GPU trying about 3
 
 This password was then used to decrypt the keepass database.
 
+
 ## 4. Connecting the wires
 
 The KeePass database contained the following information:
@@ -118,12 +121,10 @@ It also contained a hint:
 ```
 Follow the signal through bundled lines—there you’ll find the string that grants access.
 ```
-```
-```
 
 Took me a long time, I tried to guess various combinations of passwords for either file. But it turns out all but the note text and private key are not necessary. I received a hint: you had to use that information from the note to assign wires from wires 1-8 to A-H. There was another hint on the device `UTF or GTFO`.
 
-![](./wires)
+![](./media/wires.jpeg)
 
 So the solution was to sort the times using the airport codes by UTC time, and then using the first letter of each error code to assign a number to letter combination. Doing this you received a password for the private key printed by the receipt machine. 
 
@@ -185,6 +186,8 @@ To make the cat wave present it with the following token: 0x80E2F511C22FEF83
 Whatever that means.
 
 ## 6. Cats can read QR codes
+
+![](./media/receipts.jpeg)
 
 Turns out, when you scan your RFID token in the reader, the receipt would give you another hint: the cat could only read QR codes. So I created a QR code with the number as a string and the cat started waving:
 
